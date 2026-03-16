@@ -35,7 +35,7 @@ PODS:
     - IQKeyboardCore
     - IQKeyboardToolbar/Placeholderable
   - IQKeyboardToolbar/Placeholderable (1.1.3)
-  - IQKeyboardToolbarManager (1.1.4):
+  - IQKeyboardToolbarManager (1.1.5):
     - IQKeyboardToolbar
     - IQTextInputViewNotification
   - IQTextInputViewNotification (1.0.9):
@@ -115,7 +115,7 @@ PODS:
     - NVActivityIndicatorView/Base (= 5.2.0)
   - NVActivityIndicatorView/Base (5.2.0)
   - RSSelectionMenu (7.1.3)
-  - SDWebImage/Core (5.21.6)
+  - SDWebImage/Core (5.21.7)
   - SDWebImageSVGCoder (1.8.0):
     - SDWebImage/Core (~> 5.6)
   - SVGKit (3.0.0):
@@ -177,7 +177,7 @@ SPEC CHECKSUMS:
   IQKeyboardNotification: eb4910401f5a0e68f97e71c62f8a0c5b7e9d535c
   IQKeyboardReturnManager: fcbf51fc68d7536fc1fbcca5231c4e82576b12ac
   IQKeyboardToolbar: 9fe900f8e7def414be4025af0ca098df764d4fe3
-  IQKeyboardToolbarManager: c8a575e8b5fffe5873d0e75312244498a0759473
+  IQKeyboardToolbarManager: d449479b5843d4a3fb902d03bf62d6ca031ac20e
   IQTextInputViewNotification: 3b9fb27a16e7ee8958cc9092cfb07a1a9e1fd559
   IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
@@ -185,7 +185,7 @@ SPEC CHECKSUMS:
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   NVActivityIndicatorView: fe52a6a68664c2df8991d7d9e3d86d8d19453c53
   RSSelectionMenu: 873d62ebbaef138519f6cf3f073412c2b5d94c2c
-  SDWebImage: 1bb6a1b84b6fe87b972a102bdc77dd589df33477
+  SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
   SDWebImageSVGCoder: 8e10c8f6cc879c7dfb317b284e13dd589379f01c
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   SwiftyGif: 706c60cf65fa2bc5ee0313beece843c8eb8194d4

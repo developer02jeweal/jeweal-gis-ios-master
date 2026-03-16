@@ -230,7 +230,7 @@ class POSAddToCart: UIViewController , UICollectionViewDelegate , UICollectionVi
                 }
                 
                 if statusCode == 200 {
-                    print(response,"check1")
+                   
                     if let mData = response.value(forKey: "data") as? NSDictionary,
                        let mProductData = mData.value(forKey: "productdata_details") as? NSDictionary {
                         
@@ -251,8 +251,37 @@ class POSAddToCart: UIViewController , UICollectionViewDelegate , UICollectionVi
                         
                         self.mPMetalName.text = "\(mProductData.value(forKey: "metal_name") ?? "--" )"
                         self.mPMetalWeight.text = "\(mProductData.value(forKey: "GrossWt") ?? "--" )"
-                        self.mPStoneName.text = "\(mProductData.value(forKey: "stone_name") ?? "--" )"
-                        self.mPStoneWeight.text = "\(mProductData.value(forKey: "Cts") ?? "--" )"
+                         if let stones = mProductData.value(forKey: "stones") as? [[String: Any]] {
+    
+                                var stoneDict: [String:(pcs:Int, weight:Double, unit:String)] = [:]
+                                
+                                for stone in stones {
+                                    
+                                    let name = stone["stone_name"] as? String ?? ""
+                                    let pcs = stone["Pcs"] as? Int ?? 0
+                                    let weight = Double("\(stone["Cts"] ?? "0")") ?? 0
+                                    let unit = stone["Unit"] as? String ?? ""
+                                    
+                                    if var exist = stoneDict[name] {
+                                        exist.pcs += pcs
+                                        exist.weight += weight
+                                        stoneDict[name] = exist
+                                    } else {
+                                        stoneDict[name] = (pcs, weight, unit)
+                                    }
+                                }
+                                
+                                var nameLines: [String] = []
+                                var weightLines: [String] = []
+                                
+                                for (name,data) in stoneDict {
+                                    nameLines.append(name)
+                                    weightLines.append("\(data.pcs) \(data.weight) \(data.unit)")
+                                }
+                                
+                                self.mPStoneName.text = nameLines.joined(separator: "\n")
+                                self.mPStoneWeight.text = weightLines.joined(separator: "\n")
+                            }
                         self.mPrice.text =  self.mStoreCurrency + " \(mProductData.value(forKey: "price") ?? "0.00" )"
                         self.mSelectedPointerPrice = " \(mProductData.value(forKey: "price") ?? "0.00" )"
                         //BaseVarientId
@@ -1036,8 +1065,37 @@ class POSAddToCart: UIViewController , UICollectionViewDelegate , UICollectionVi
                         self.mReferenceNo.text = "\(mProductData.value(forKey: "SKU") ?? "--")"
                         self.mPMetalName.text = "\(mProductData.value(forKey: "metal_name") ?? "--" )"
                         self.mPMetalWeight.text = "\(mProductData.value(forKey: "GrossWt") ?? "--" )"
-                        self.mPStoneName.text = "\(mProductData.value(forKey: "stone_name") ?? "--" )"
-                        self.mPStoneWeight.text = "\(mProductData.value(forKey: "diamondWt") ?? "--" )"
+ if let stones = mProductData.value(forKey: "stones") as? [[String: Any]] {
+    
+                                var stoneDict: [String:(pcs:Int, weight:Double, unit:String)] = [:]
+                                
+                                for stone in stones {
+                                    
+                                    let name = stone["stone_name"] as? String ?? ""
+                                    let pcs = stone["Pcs"] as? Int ?? 0
+                                    let weight = Double("\(stone["Cts"] ?? "0")") ?? 0
+                                    let unit = stone["Unit"] as? String ?? ""
+                                    
+                                    if var exist = stoneDict[name] {
+                                        exist.pcs += pcs
+                                        exist.weight += weight
+                                        stoneDict[name] = exist
+                                    } else {
+                                        stoneDict[name] = (pcs, weight, unit)
+                                    }
+                                }
+                                
+                                var nameLines: [String] = []
+                                var weightLines: [String] = []
+                                
+                                for (name,data) in stoneDict {
+                                    nameLines.append(name)
+                                    weightLines.append("\(data.pcs) \(data.weight) \(data.unit)")
+                                }
+                                
+                                self.mPStoneName.text = nameLines.joined(separator: "\n")
+                                self.mPStoneWeight.text = weightLines.joined(separator: "\n")
+                            }
                         self.mPrice.text =   self.mStoreCurrency + " \(mProductData.value(forKey: "price") ?? "0.00" )"
                         self.mSelectedPointerPrice = " \(mProductData.value(forKey: "price") ?? "0.00" )"
                         

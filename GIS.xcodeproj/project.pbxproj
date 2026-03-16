@@ -17,6 +17,7 @@
 		0688D2252BB2F10F008A7886 /* AddressPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0688D2242BB2F10F008A7886 /* AddressPicker.storyboard */; };
 		0688D2272BB2F139008A7886 /* AddressPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0688D2262BB2F139008A7886 /* AddressPicker.swift */; };
 		06AE78F02B738F89007AADC2 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE78EF2B738F89007AADC2 /* SpeechRecognizer.swift */; };
+		08175545DA30E7C3C07B71D5 /* Pods_GIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0578F2E55BB52C2715E2EC1 /* Pods_GIS.framework */; };
 		520751E52A582F0200E6F932 /* quotation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520751E42A582F0200E6F932 /* quotation.storyboard */; };
 		520E96CE2A5C1C9C00F58DBC /* confirmquote.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520E96CD2A5C1C9C00F58DBC /* confirmquote.xib */; };
 		521A75F62A05131C00C8777F /* transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521A75F52A05131C00C8777F /* transactions.storyboard */; };
@@ -144,8 +145,8 @@
 		843A3A28272D9ED6002E4F0F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A3A1F272D9ED6002E4F0F /* APIManager.swift */; };
 		84BAA41E2742640B00FD8F37 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84BAA4202742640B00FD8F37 /* Localization.strings */; };
 		84BAA42727426C6A00FD8F37 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BAA42627426C6A00FD8F37 /* AppLanguage.swift */; };
-		896C0B6A2F7A44B68EC946BA /* Pods_GIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C7F46FA51BDC3B01C6EF4F /* Pods_GIS.framework */; };
-		D0674443E582C7ED1AE9151C /* Pods_GIS_GISUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4246A3FD1CFF2C67C747008C /* Pods_GIS_GISUITests.framework */; };
+		940E695AF777200E2A151146 /* Pods_GISTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB2F1530E12A01977487B933 /* Pods_GISTests.framework */; };
+		A28269F19059D089E6B884F4 /* Pods_GIS_GISUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BCE3B20CA784E92BFFED1B /* Pods_GIS_GISUITests.framework */; };
 		D90375922757851400E4CE09 /* Posfilter.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90375912757851300E4CE09 /* Posfilter.xib */; };
 		D903A18927B2315B004FE2E0 /* emailpopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = D903A18827B2315B004FE2E0 /* emailpopup.xib */; };
 		D9064A57260C848800D856D1 /* POSHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9064A56260C848700D856D1 /* POSHome.swift */; };
@@ -213,7 +214,6 @@
 		D9E42ACB2563D44A0051D714 /* LanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E42ACA2563D44A0051D714 /* LanguageController.swift */; };
 		D9E7A9D0270C24D9005CC79D /* RepairDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E7A9CF270C24D9005CC79D /* RepairDesign.swift */; };
 		D9F0369C2589C950001211B4 /* CheckOutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F0369B2589C950001211B4 /* CheckOutPage.swift */; };
-		FF9758170B980EB23AF23A37 /* Pods_GISTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 155DAF3782ABB6CE236E5B22 /* Pods_GISTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -263,10 +263,8 @@
 		0688D2242BB2F10F008A7886 /* AddressPicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddressPicker.storyboard; sourceTree = "<group>"; };
 		0688D2262BB2F139008A7886 /* AddressPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressPicker.swift; sourceTree = "<group>"; };
 		06AE78EF2B738F89007AADC2 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
-		0EE122C628184FBE7C67CE64 /* Pods-GIS-GISUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS-GISUITests.debug.xcconfig"; path = "Target Support Files/Pods-GIS-GISUITests/Pods-GIS-GISUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		11C7F46FA51BDC3B01C6EF4F /* Pods_GIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		155DAF3782ABB6CE236E5B22 /* Pods_GISTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GISTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4246A3FD1CFF2C67C747008C /* Pods_GIS_GISUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIS_GISUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2301F63ED3CD591A511423 /* Pods-GIS-GISUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS-GISUITests.release.xcconfig"; path = "Target Support Files/Pods-GIS-GISUITests/Pods-GIS-GISUITests.release.xcconfig"; sourceTree = "<group>"; };
+		285B85C6B68B24FBE2E6AEBB /* Pods-GIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS.debug.xcconfig"; path = "Target Support Files/Pods-GIS/Pods-GIS.debug.xcconfig"; sourceTree = "<group>"; };
 		520751E42A582F0200E6F932 /* quotation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = quotation.storyboard; sourceTree = "<group>"; };
 		520E96CD2A5C1C9C00F58DBC /* confirmquote.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmquote.xib; sourceTree = "<group>"; };
 		521A75F52A05131C00C8777F /* transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = transactions.storyboard; sourceTree = "<group>"; };
@@ -301,7 +299,6 @@
 		52C4D45D2A8A0B2B00EBADFB /* CommonScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonScanner.swift; sourceTree = "<group>"; };
 		52DA66D02A9E056D00C45A37 /* CommonCustomerFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCustomerFilters.swift; sourceTree = "<group>"; };
 		52F62F6A2A6E31F700F021D0 /* CommonServiceLabour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonServiceLabour.swift; sourceTree = "<group>"; };
-		5ED3AB6B4CAB86C4C1D45EC0 /* Pods-GIS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS.debug.xcconfig"; path = "Target Support Files/Pods-GIS/Pods-GIS.debug.xcconfig"; sourceTree = "<group>"; };
 		65000C0C2BC64D6A0065E384 /* AddressManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressManager.swift; sourceTree = "<group>"; };
 		6506BA322CD21E140074E5A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = Base; path = Base.lproj/QuickViewIntent.intentdefinition; sourceTree = "<group>"; };
 		6506BA372CD21E180074E5A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QuickViewIntent.strings; sourceTree = "<group>"; };
@@ -349,6 +346,7 @@
 		656F70812CC0E0DF009914C9 /* SiriIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F70822CC0E0DF009914C9 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		658EC75D2CC7B8F500082F88 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		68058B828D0A8E6E6F41FE80 /* Pods-GIS-GISUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS-GISUITests.debug.xcconfig"; path = "Target Support Files/Pods-GIS-GISUITests/Pods-GIS-GISUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7428C569297BE535004F5754 /* removepopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = removepopup.xib; sourceTree = "<group>"; };
 		742B12D029DC175300BE71B2 /* confirmpark.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = confirmpark.xib; sourceTree = "<group>"; };
 		742B12D229DC1F1700BE71B2 /* POSPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSPark.swift; sourceTree = "<group>"; };
@@ -418,7 +416,7 @@
 		74DBCA5A2865EF3000175D37 /* InventoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDetails.swift; sourceTree = "<group>"; };
 		74DCDF72298D0CEC002F28FC /* CustomOrderCheckout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOrderCheckout.swift; sourceTree = "<group>"; };
 		74DCE105285DAD3D00A041C5 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
-		831EA9970D129DB746A9FC15 /* Pods-GISTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISTests.release.xcconfig"; path = "Target Support Files/Pods-GISTests/Pods-GISTests.release.xcconfig"; sourceTree = "<group>"; };
+		7A43719397B66DC5AA3E389E /* Pods-GISTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISTests.release.xcconfig"; path = "Target Support Files/Pods-GISTests/Pods-GISTests.release.xcconfig"; sourceTree = "<group>"; };
 		843A3A17272D9ED2002E4F0F /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		843A3A18272D9ED2002E4F0F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		843A3A19272D9ED3002E4F0F /* CellAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAnimator.swift; sourceTree = "<group>"; };
@@ -442,6 +440,10 @@
 		84BAA4512742C3AC00FD8F37 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		84BAA4522742C3AC00FD8F37 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		84BAA4532742C3AC00FD8F37 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localization.strings; sourceTree = "<group>"; };
+		881738123B72AAA81416C9BC /* Pods-GIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS.release.xcconfig"; path = "Target Support Files/Pods-GIS/Pods-GIS.release.xcconfig"; sourceTree = "<group>"; };
+		92BCE3B20CA784E92BFFED1B /* Pods_GIS_GISUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIS_GISUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0578F2E55BB52C2715E2EC1 /* Pods_GIS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2F1530E12A01977487B933 /* Pods_GISTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GISTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90375912757851300E4CE09 /* Posfilter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Posfilter.xib; sourceTree = "<group>"; };
 		D903A18827B2315B004FE2E0 /* emailpopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = emailpopup.xib; sourceTree = "<group>"; };
 		D9064A56260C848700D856D1 /* POSHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSHome.swift; sourceTree = "<group>"; };
@@ -515,9 +517,7 @@
 		D9E42ACA2563D44A0051D714 /* LanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageController.swift; sourceTree = "<group>"; };
 		D9E7A9CF270C24D9005CC79D /* RepairDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepairDesign.swift; sourceTree = "<group>"; };
 		D9F0369B2589C950001211B4 /* CheckOutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutPage.swift; sourceTree = "<group>"; };
-		E2664239DB53B5351315813E /* Pods-GIS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS.release.xcconfig"; path = "Target Support Files/Pods-GIS/Pods-GIS.release.xcconfig"; sourceTree = "<group>"; };
-		E6C136F6A566F558971D1C0E /* Pods-GIS-GISUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIS-GISUITests.release.xcconfig"; path = "Target Support Files/Pods-GIS-GISUITests/Pods-GIS-GISUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F2EFCAF17469DAFDC4E95570 /* Pods-GISTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISTests.debug.xcconfig"; path = "Target Support Files/Pods-GISTests/Pods-GISTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5CBA4ACD4745554765202E2 /* Pods-GISTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GISTests.debug.xcconfig"; path = "Target Support Files/Pods-GISTests/Pods-GISTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -560,7 +560,7 @@
 			files = (
 				067D24192D1BEE1C009317A9 /* StripePaymentSheet in Frameworks */,
 				065CE7532D19CE41000589D8 /* Stripe in Frameworks */,
-				896C0B6A2F7A44B68EC946BA /* Pods_GIS.framework in Frameworks */,
+				08175545DA30E7C3C07B71D5 /* Pods_GIS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,7 +568,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9758170B980EB23AF23A37 /* Pods_GISTests.framework in Frameworks */,
+				940E695AF777200E2A151146 /* Pods_GISTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +576,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0674443E582C7ED1AE9151C /* Pods_GIS_GISUITests.framework in Frameworks */,
+				A28269F19059D089E6B884F4 /* Pods_GIS_GISUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,9 +775,9 @@
 			isa = PBXGroup;
 			children = (
 				656F70822CC0E0DF009914C9 /* Intents.framework */,
-				11C7F46FA51BDC3B01C6EF4F /* Pods_GIS.framework */,
-				4246A3FD1CFF2C67C747008C /* Pods_GIS_GISUITests.framework */,
-				155DAF3782ABB6CE236E5B22 /* Pods_GISTests.framework */,
+				A0578F2E55BB52C2715E2EC1 /* Pods_GIS.framework */,
+				92BCE3B20CA784E92BFFED1B /* Pods_GIS_GISUITests.framework */,
+				BB2F1530E12A01977487B933 /* Pods_GISTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -785,12 +785,12 @@
 		8736B21561D3C14EAFB0BAC5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5ED3AB6B4CAB86C4C1D45EC0 /* Pods-GIS.debug.xcconfig */,
-				E2664239DB53B5351315813E /* Pods-GIS.release.xcconfig */,
-				0EE122C628184FBE7C67CE64 /* Pods-GIS-GISUITests.debug.xcconfig */,
-				E6C136F6A566F558971D1C0E /* Pods-GIS-GISUITests.release.xcconfig */,
-				F2EFCAF17469DAFDC4E95570 /* Pods-GISTests.debug.xcconfig */,
-				831EA9970D129DB746A9FC15 /* Pods-GISTests.release.xcconfig */,
+				285B85C6B68B24FBE2E6AEBB /* Pods-GIS.debug.xcconfig */,
+				881738123B72AAA81416C9BC /* Pods-GIS.release.xcconfig */,
+				68058B828D0A8E6E6F41FE80 /* Pods-GIS-GISUITests.debug.xcconfig */,
+				0A2301F63ED3CD591A511423 /* Pods-GIS-GISUITests.release.xcconfig */,
+				E5CBA4ACD4745554765202E2 /* Pods-GISTests.debug.xcconfig */,
+				7A43719397B66DC5AA3E389E /* Pods-GISTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1117,12 +1117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D968C9C92538699C00D45A90 /* Build configuration list for PBXNativeTarget "GIS" */;
 			buildPhases = (
-				9F3FC71196D1C25F04061C36 /* [CP] Check Pods Manifest.lock */,
+				E868E8A2AFE0154426B0D646 /* [CP] Check Pods Manifest.lock */,
 				D968C99B2538696A00D45A90 /* Sources */,
 				D968C99C2538696A00D45A90 /* Frameworks */,
 				D968C99D2538696A00D45A90 /* Resources */,
 				656F708F2CC0E0E0009914C9 /* Embed Foundation Extensions */,
-				62558C21E4B82BA23AC924BC /* [CP] Embed Pods Frameworks */,
+				5E6B8E0146B5456E808C3936 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1138,7 +1138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D968C9CC2538699C00D45A90 /* Build configuration list for PBXNativeTarget "GISTests" */;
 			buildPhases = (
-				5AE4B9F3C73DB570F2D70B80 /* [CP] Check Pods Manifest.lock */,
+				4B099AFC24884E3AF3F86B13 /* [CP] Check Pods Manifest.lock */,
 				D968C9B12538699C00D45A90 /* Sources */,
 				D968C9B22538699C00D45A90 /* Frameworks */,
 				D968C9B32538699C00D45A90 /* Resources */,
@@ -1157,11 +1157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D968C9CF2538699C00D45A90 /* Build configuration list for PBXNativeTarget "GISUITests" */;
 			buildPhases = (
-				B8D2727C30EAEDCFFADBF51B /* [CP] Check Pods Manifest.lock */,
+				F34FFA8429E2D5EC3A4B0570 /* [CP] Check Pods Manifest.lock */,
 				D968C9BC2538699C00D45A90 /* Sources */,
 				D968C9BD2538699C00D45A90 /* Frameworks */,
 				D968C9BE2538699C00D45A90 /* Resources */,
-				7DC2F15E1DE5D54CAF8F7A32 /* [CP] Embed Pods Frameworks */,
+				4C67CA3CE6E8DDC291EB51F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1298,7 +1298,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5AE4B9F3C73DB570F2D70B80 /* [CP] Check Pods Manifest.lock */ = {
+		4B099AFC24884E3AF3F86B13 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1320,24 +1320,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62558C21E4B82BA23AC924BC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GIS/Pods-GIS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GIS/Pods-GIS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIS/Pods-GIS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DC2F15E1DE5D54CAF8F7A32 /* [CP] Embed Pods Frameworks */ = {
+		4C67CA3CE6E8DDC291EB51F7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1354,7 +1337,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIS-GISUITests/Pods-GIS-GISUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F3FC71196D1C25F04061C36 /* [CP] Check Pods Manifest.lock */ = {
+		5E6B8E0146B5456E808C3936 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIS/Pods-GIS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIS/Pods-GIS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIS/Pods-GIS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E868E8A2AFE0154426B0D646 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1376,7 +1376,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B8D2727C30EAEDCFFADBF51B /* [CP] Check Pods Manifest.lock */ = {
+		F34FFA8429E2D5EC3A4B0570 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1929,7 +1929,7 @@
 		};
 		D968C9CA2538699C00D45A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ED3AB6B4CAB86C4C1D45EC0 /* Pods-GIS.debug.xcconfig */;
+			baseConfigurationReference = 285B85C6B68B24FBE2E6AEBB /* Pods-GIS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1958,7 +1958,7 @@
 		};
 		D968C9CB2538699C00D45A90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2664239DB53B5351315813E /* Pods-GIS.release.xcconfig */;
+			baseConfigurationReference = 881738123B72AAA81416C9BC /* Pods-GIS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1985,7 +1985,7 @@
 		};
 		D968C9CD2538699C00D45A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2EFCAF17469DAFDC4E95570 /* Pods-GISTests.debug.xcconfig */;
+			baseConfigurationReference = E5CBA4ACD4745554765202E2 /* Pods-GISTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2006,7 +2006,7 @@
 		};
 		D968C9CE2538699C00D45A90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 831EA9970D129DB746A9FC15 /* Pods-GISTests.release.xcconfig */;
+			baseConfigurationReference = 7A43719397B66DC5AA3E389E /* Pods-GISTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -2027,7 +2027,7 @@
 		};
 		D968C9D02538699C00D45A90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EE122C628184FBE7C67CE64 /* Pods-GIS-GISUITests.debug.xcconfig */;
+			baseConfigurationReference = 68058B828D0A8E6E6F41FE80 /* Pods-GIS-GISUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GISUITests/Info.plist;
@@ -2046,7 +2046,7 @@
 		};
 		D968C9D12538699C00D45A90 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6C136F6A566F558971D1C0E /* Pods-GIS-GISUITests.release.xcconfig */;
+			baseConfigurationReference = 0A2301F63ED3CD591A511423 /* Pods-GIS-GISUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GISUITests/Info.plist;

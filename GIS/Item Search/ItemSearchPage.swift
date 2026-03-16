@@ -132,7 +132,7 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
     @IBOutlet weak var mTotalSold: UILabel!
     @IBOutlet weak var mTotalReserve: UILabel!
     @IBOutlet weak var mTotalStock: UILabel!
-    var mSearchType = "SKU"
+    var mSearchType = "catalog"
     var mSearchData = NSArray()
     @IBOutlet weak var mStockImage: UIImageView!
     
@@ -280,7 +280,7 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
         mReserveOrderListView.dropShadow()
         mReserveOrderListView.isHidden =  true
         
-        mSearchType = "SKU"
+        mSearchType = "catalog"
         mSearchField.placeholder = "Search by SKU".localizedString
         mSwitchIcon.image = UIImage(named: "sku_id_ic")
         
@@ -402,7 +402,10 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
         mSelectedRows = [String]()
         
         CommonClass.showFullLoader(view: self.view)
-        let params:[String: Any] = ["search" : mSearchField.text ?? "", "location_id":mSelectedItems, "type":mSearchType]
+        let type = mSearchType == "catalog" ? "SKU" : "stock_id"
+
+
+        let params:[String: Any] = ["search" : mSearchField.text ?? "", "location_id":mSelectedItems, "type":type]
         
         mGetData(url: mGetItemSearchReserveOrderData,headers: sGisHeaders,  params: params) { response , status in
             CommonClass.stopLoader()
@@ -472,10 +475,11 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
                 return
             }
             
-            let mParams = ["product_id":self.mSelectedRows, "customer_id":mCustomerId, "sales_person_id":"", "type":mSearchType, "order_type":"custom_order"] as [String : Any]
-            
+            let mParams = ["product_id":self.mSelectedRows, "customer_id":mCustomerId, "sales_person_id":"", "type":"inventory", "order_type":"custom_order"] as [String : Any]
+            print(mParams)
             mGetData(url: mAddCustomProduct,headers: sGisHeaders,  params: mParams) { response , status in
                 CommonClass.stopLoader()
+                print(response)
                 if status {
                     
                     guard let code = response.value(forKey: "code") as? Int else {
@@ -542,11 +546,11 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
     @IBAction func mSwitchSearch(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         if sender.isSelected {
-            mSearchType = "stock_id"
+            mSearchType = "inventory"
             mSearchField.placeholder = "Search by Stock ID".localizedString
             mSwitchIcon.image = UIImage(named: "stock_id_ic")
         }else{
-            mSearchType = "SKU"
+            mSearchType = "catalog"
             mSearchField.placeholder = "Search by SKU".localizedString
             mSwitchIcon.image = UIImage(named: "sku_id_ic")
         }
@@ -558,7 +562,13 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
     func mSearchProductByKeys(value: String){
         
         let urlPath =   mSearchItems
-        let params = ["search": value,"type":mSearchType]
+        let type = mSearchType == "catalog" ? "SKU" : "stock_id"
+
+        let params: [String: Any] = [
+            "search": value,
+            "type": type
+        ]
+        
         
         if Reachability.isConnectedToNetwork() == true {
             CommonClass.showFullLoader(view: self.view)
@@ -1136,9 +1146,11 @@ class ItemSearchPage: UIViewController ,  UITableViewDelegate , UITableViewDataS
         
         
         
+        let type = mSearchType == "catalog" ? "SKU" : "stock_id"
+
         let params: [String: Any] = [
             "search": key,
-            "type": mSearchType,
+            "type": type
         ]
         
         guard !key.isEmpty else {
