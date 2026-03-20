@@ -407,6 +407,7 @@ class CustomOrderCheckout: UIViewController, UITextFieldDelegate , UITableViewDe
     
     
     var mCreditCardPayment = NSMutableArray()
+    var mIBPayment = NSMutableArray()
     var mBankPayment = NSMutableArray()
     var mCashPayment = NSMutableDictionary()
     var mCartTotalAmount = ""
@@ -1130,7 +1131,6 @@ class CustomOrderCheckout: UIViewController, UITextFieldDelegate , UITableViewDe
                             mBankNames.append("\(data.value(forKey: "name") ?? "")")
                             mBankImage.append("\(data.value(forKey: "PayMethod_logo") ?? "")")
                             mPMId.append("\(data.value(forKey: "PaymentMethod") ?? "")")
-                            
                             
                         }
                     }
@@ -2046,11 +2046,12 @@ class CustomOrderCheckout: UIViewController, UITextFieldDelegate , UITableViewDe
             mCreditNoteMethod.setValue("CreditNote", forKey: "Paymentmethod_type")
             
             mPayData.setValue(mCashMethod, forKey: "cash")
+            mPayData.setValue(mIBPayment, forKey: "IB")
             mPayData.setValue(mBankPayment, forKey: "bank")
-            mPayData.setValue([], forKey: "IB")
+                    
             mPayData.setValue(mCreditCardMethod, forKey: "credit_card")
             mPayData.setValue(mCreditNoteMethod, forKey: "credit_note")
-            mPayData.setValue("", forKey: "gift_card")
+            mPayData.setValue(mGiftCardMethod, forKey: "gift_card")
             
             mSellInfo.setValue(mCartTableData, forKey: "cart")
             mSellInfo.setValue(mSummaryOrder, forKey: "summary_order")
@@ -2058,8 +2059,7 @@ class CustomOrderCheckout: UIViewController, UITextFieldDelegate , UITableViewDe
             mSellInfo.setValue(Double(mCartTotalAmount) ?? 0.00, forKey: "totalamount")
             
             mPaymentInfo.setValue(mDebitedAmount, forKey: "debited_amount")
-            mPaymentInfo.setValue(mPayData, forKey: "pay_data")
-            mPaymentInfo.setValue(mPayData, forKey: "pay_data")
+            mPaymentInfo.setValue(mPayData, forKey: "pay_data") 
             mPaymentInfo.setValue("", forKey: "balance_due")
             mPaymentInfo.setValue("", forKey: "balance_deposit")
             
@@ -3123,13 +3123,13 @@ class CustomOrderCheckout: UIViewController, UITextFieldDelegate , UITableViewDe
                             self.mChequeData.setValue(self.mCheqInstNumber.text ?? "", forKey: "inst_no")
                             self.mChequeData.setValue(self.mEnterAmountText.text ?? "", forKey: "amount")
                             self.mChequeData.setValue(self.mClientReferenceID, forKey: "client_reference_id")
-                            self.mChequeData.setValue("Bank", forKey: "Paymentmethod_type")
+                            self.mChequeData.setValue("IB", forKey: "Paymentmethod_type")
                             
-                            self.mBankPayment.add(self.mChequeData)
+                            self.mIBPayment.add(self.mChequeData)
                             
                             
                             var mAmounts = [Double]()
-                            for i in self.mBankPayment {
+                            for i in self.mIBPayment  {
                                 let mData = i as? NSDictionary
                                 mAmounts.append(Double("\(mData?.value(forKey: "amount") ?? "0.0")".replacingOccurrences(of: ",", with: "")) ?? 0.00)
                             }
